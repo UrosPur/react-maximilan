@@ -91,6 +91,9 @@ class App extends Component {
 
 
                 <div>
+
+                    // map ->maps javascript array of object,strings... to jsx array
+                    //react pulls elements and displays them to the 'screen'
                 {this.state.persons.map((singleArrayElement,index) => {
 
                     return <Person
