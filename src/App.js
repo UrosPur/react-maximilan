@@ -76,7 +76,9 @@ class App extends Component {
     render() {
         const style = {
 
-            backgroundColor: 'white',
+
+            backgroundColor: 'green',
+            color:'white',
             font: 'inherit',
             border: '1px solid blue',
             padding: '8px',
@@ -92,8 +94,8 @@ class App extends Component {
 
                 <div>
 
-                    // map ->maps javascript array of object,strings... to jsx array
-                    //react pulls elements and displays them to the 'screen'
+                    {/*// map ->maps javascript array of object,strings... to jsx array*/}
+                    {/*//react pulls elements and displays them to the 'screen'*/}
                 {this.state.persons.map((singleArrayElement,index) => {
 
                     return <Person
@@ -109,6 +111,7 @@ class App extends Component {
                 </div>
 
             );
+            style.backgroundColor = 'red';
 
         }
 
